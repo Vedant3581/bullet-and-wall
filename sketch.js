@@ -23,24 +23,9 @@ function draw() {
     var damage = (0.5*weigth*speed*speed)/(wall*wall*wall)
     if(damage<10){
       wall.shapeColor="green"
-    } 
-    
-    if(damage >= 10){
+    } else{
       wall.shapeColor="red"
     }
-
-    var deformation = (0.5*weigth*speed*speed)/22500;
-
-    if(deformation<100){
-      bullet.shapeColor="green";
-    }else if(deformation >= 100 && deformation < 180){
-      bullet.shapeColor="yellow"
-    }else if (deformation >= 180){
-      bullet.shapeColor="red"
-    }
-     
   }
-
   drawSprites();
 }
-
