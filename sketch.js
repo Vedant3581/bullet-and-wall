@@ -23,13 +23,13 @@ function draw() {
 
   if(isTouching(bullet,wall)){
     bullet.velocityX=0;
-    var damage = (0.5*weigth*speed*speed)/(wall*wall*wall);
+    var damage = (0.5*weigth*speed*speed)/(thickness*thickness*thickness);
     if(damage>10){
-      wall.shapeColor="green";
+      wall.shapeColor="red";
     }
     else{
-      wall.shapeColor="red";
+      wall.shapeColor="green";
      } 
-   drawSprite();
-  }
+   }
+  drawSprites();
 }
